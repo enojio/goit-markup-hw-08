@@ -1,0 +1,36 @@
+.title {
+  text-align: center;
+  font-family: var(--main-font);
+  @include font(700, 26px, 1.18);
+  color: var(--title-text-color);
+  &__customers {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    @include font(700, 28px, 1.18);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    text-align: center;
+    font-family: var(--main-font);
+    @include font(700, 36px, 1.17);
+    color: var(--title-text-color);
+
+    &__team,
+    &__product,
+    &__customers {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .title__product {
+    display: none;
+  }
+}

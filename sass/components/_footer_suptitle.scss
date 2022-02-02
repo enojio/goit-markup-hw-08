@@ -1,0 +1,13 @@
+.footer-suptitle {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  @include font(700, 14px, 1.14);
+  text-transform: uppercase;
+  color: var(--white-text-back-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer-suptitle {
+    text-align: start;
+  }
+}
